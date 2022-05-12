@@ -16,7 +16,8 @@ This is my solution to the [NFT preview card component challenge on Frontend Men
 
 For this project my main challenge was the image overlay in hover state, I used [W3shool](https://www.w3schools.com) resources to get this solution, concretely [How TO - Image Hover Overlay](http://https://www.w3schools.com/howto/howto_css_image_overlay.asp).
 To see how I solved it you can see below 👇
-####HTML code
+
+#### HTML code
 
 ```html
 <figure class="card-image">
@@ -25,7 +26,7 @@ To see how I solved it you can see below 👇
 </figure>
 ```
 
-####CSS code
+#### CSS code
 
 ```css
 :root {
