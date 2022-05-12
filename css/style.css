@@ -1,0 +1,139 @@
+:root {
+  --soft-blue: #8bacda;
+  --cyan: #00fff7;
+  --cyan-overlay: #00fff780;
+  --very-dark-blue: #0d192b;
+  --dark-blue: #14253d;
+  --soft-dark-blue: #2f415b;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  color: var(--soft-blue);
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  font-weight: 300;
+  background-color: var(--very-dark-blue);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  min-height: 95vh;
+}
+
+.card {
+  width: 320px;
+  height: 535px;
+  margin: 25px;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+}
+
+.card-image {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card-image-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-image: url(../images/icon-view.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+}
+
+.card-image-overlay:hover {
+  cursor: pointer;
+  opacity: 1;
+  background-color: var(--cyan-overlay);
+}
+
+.card-text a {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-text p {
+  margin: 12px 0px 16px;
+  line-height: 24px;
+}
+
+.card-details-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--soft-blue);
+}
+
+.card-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+.card-detail-left {
+  width: 90px;
+  font-weight: 400;
+  color: var(--cyan);
+}
+
+.card-detail-right {
+  width: 95px;
+}
+
+.card-creator {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-top: 15px;
+}
+
+.card-creator img {
+  height: 100%;
+  margin-right: 15px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.attribution {
+  align-self: flex-end;
+  margin-bottom: 15px;
+  font-size: 11px;
+  text-align: center;
+}
