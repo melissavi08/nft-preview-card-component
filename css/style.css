@@ -38,17 +38,11 @@ a:hover {
   color: var(--cyan);
 }
 
-.container {
-  display: grid;
-  place-items: center;
-}
-
 .card {
   display: grid;
   grid-template-rows: 1fr auto;
-  gap: 24px;
+  gap: 26px;
   max-width: 340px;
-  min-height: 544px; /*mobile height*/
   max-height: 585px;
   padding: 24px;
   border-radius: 20px;
@@ -154,4 +148,18 @@ hr {
   margin-bottom: 15px;
   font-size: 11px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .card-info {
+    gap: 24px;
+  }
+
+  .card-info > p {
+    font-size: 18px;
+  }
+
+  .card-description {
+    gap: 20px;
+  }
 }
